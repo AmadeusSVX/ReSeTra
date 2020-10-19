@@ -10,7 +10,7 @@
 ## 動作環境
 * Windows10　VR ready対応PC
 * [ReSeTraソフトウェア](https://dummy)
-* Segmentation Fault氏作の[VirtualMotionTracker](https://github.com/gpsnmeajp/VirtualMotionTracker)
+* [VirtualMotionTracker](https://github.com/gpsnmeajp/VirtualMotionTracker) Segmentation Fault氏作 
 * [SteamVR]（https://store.steampowered.com/app/250820/SteamVR/） 
 * Oculus Rift SもしくはOculus Quest（Oculus LinkあるいはVirtual Desktopでの接続）
  * **WindowsMRでは現状可視光カットフィルタが別途必要。HTC Vive、Valve Indexでは未検証**
@@ -31,11 +31,12 @@
 1. ピンポン玉に再帰性反射テープを貼ります。底面になる部分は穴を開けるため開けておきます
 ![テープ貼り付け](/images/taping.png)
 1. ピンポン玉に穴を4つ開けます。ガチャポンの空カプセルには予め穴が開いている物もあるので、そちらを使うと労力を減らせます（※ただし球形の物を選ぶ必要があります）
+
 ![底面に穴あけ](/images/drilling.png)
-1. ボタンを縫い付ける要領でリストバンドに縫い付けます [参考](https://kaden.watch.impress.co.jp/docs/column/lifestyle/1161391.html) 。ただし、糸足を作る必要はありません。
+1. ボタンを縫い付ける要領でリストバンドに縫い付けます ([参考](https://kaden.watch.impress.co.jp/docs/column/lifestyle/1161391.html)) 。ただし、糸足を作る必要はありません。
 ![縫い付け](/images/sewing.png)
 1. 3つ作れば完成です。お疲れさまでした!
-![完成](/images/reflector.png)
+![完成](/images/completemarker.png)
 
 ## セットアップ
 1. SteamVRをPCにインストールします
@@ -46,24 +47,32 @@
 ![プロジェクタ上にテープを張り付け](/images/tapedprojector.png)
 1. RealSenseを設置します。USB-CケーブルでPCと接続して、ユーザーが立つ位置の真正面に下半身が視界に入るよう配置してください。
 1. 反射マーカーを装着します。お腹にはバンドの中にベルトを通してあげると固定しやすいです。
+![身体にマーカー装着](/images/bodymarker.png)
 1. RealSenseの正面に立って、ReSeTraを起動します。右のBody points画像で、Waist, L Foot, R Footが各位置にそれぞれ対応していれば成功です。
-![App window](/images/appwindow.png)
+![アプリケーションウィンドウ](/images/appwindow.png)
 1. 背景の他の物に誤対応している場合は、IR imageで検出の様子（検出領域が矩形で囲まれます）を見ながら、背景の反射物を片づけたり、窓からの太陽光を遮るなどの対策を行ってください。
-1. 対策後、Binalize thresholdの値を変化させてみてください。基本的により大きい値にすると誤検出は減少します。その反面検出したマーカーがロストしやすくなります。
+1. 対策後、Binalize thresholdの値を変化させてみてください。基本的に大きい値にすると誤検出は減少します。その反面、検出したマーカーがロストしやすくなります。
 1. もしWaist, L Foot, R Footの対応がおかしい場合は、Reset Indexを押して対応付けをリセットしてみてください。リセットでロストした場合は、再びthresholdの値を変えて調整してください。
 1. 安定して3点を検出できるようになったら、三点がなす三角形が地面に垂直になるように頑張って立って、Zero setボタンを押してください。押した位置が初期位置=原点になります。
 1. SteamVRを起動します
-1. ReSeTra側のStart VMTボタンを押して位置の送信を開始します。
+1. ReSeTra側のStart VMTボタンを押して位置の送信を開始します。SteamVRのウィンドウにVMTのアイコンが3つ現れたら正常に動作しています。
+![SteamVRウィンドウ](/images/steamvr.png)
 1. HMD側の原点も同じ位置で正面を向いてリセットしてください（Oボタン長押し）。ReSeTra側の初期位置はZero set後に固定されるので、その位置に合うようにHMD側でリセットを行います。
-*これで完了です。2回目以降の使用では、6.~13.の手順になります。一度解決すれば7.~9.もほぼ省略可能です。良いフルトラライフを！
+*　これで完了です。**2回目以降の使用では6.~13.の手順になります。一度設定が決まれば7.~9.もほぼ省略可能です。良いフルトラライフを！**
 
 ## トラブルシューティング・FAQ
 **ReSeTraが起動しません**
+
 →USB3で接続されている事を確認してください。[RealSense Viewer](https://github.com/IntelRealSense/librealsense/releases/download/v2.38.1/Intel.RealSense.Viewer.exe)を使えば、現在繋がっているRealSenseがUSB3かどうかを確認する事が出来ます。もしUSB2.xで接続されている場合は、ケーブルをつなぎ直す、USB-Cの向きを変える、ポートを変える、ケーブルそのものを変えて見るなどの対策を行い、USB3で接続される事を確認後、上記の6.の手順に戻ってください。
 
 **SteamVRがエラーを起こしてVMTプラグインが無効化されてしまいます**
-→SteamVRの起動前にReSeTra側からVMT向けデータの送信を始めると正しく起動しなくなります。ReSeTra起動直後はVMTへの送信を開始せず、上記手順の11.と12.の順番を守って再度試してみてください。
+
+→SteamVRの起動前にReSeTra側からVMT向けデータの送信を始めると正しく起動しなくなります。ReSeTra起動直後はVMTへの送信を開始せず、上記手順の11.と12.の順序を守って再度試してみてください。
+
+**プレイ時にWaist, L Foot, R Footの対応がおかしくなってしまって戻らない**
+
+→Reset　Indexボタンを押すことで対応付けのリセットが可能です。また、VRアプリケーションの体験中でボタンを押すのが困難な場合は、正面に立った状態で3つのうちのマーカーの2つを手や他の部位で隠して一度ロストさせてみてください。対応付けが自動的にリセットされます。
 
 ## 免責事項
-* 本アプリケーションに発生した不具合について、開発者は一切の修正の義務を負いません。
-* 本アプリケーションの使用、または使用時の不具合等に伴って生じた損害について、開発者は一切の責任を負いません。
+* 本アプリケーションに発生した不具合について、本アプリケーション開発者は一切の修正・改善の義務を負いません。
+* 本アプリケーションの使用、または使用時の不具合等に伴って生じた損害について、本アプリケーション開発者は一切の責任を負いません。
