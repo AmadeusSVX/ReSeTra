@@ -29,12 +29,13 @@
 
 ### 作成方法
 1. ピンポン玉に再帰性反射テープを貼ります。底面になる部分は穴を開けるため開けておきます
+![テープ貼り付け](/images/taping.png)
 1. ピンポン玉に穴を4つ開けます。ガチャポンの空カプセルには予め穴が開いている物もあるので、そちらを使うと労力を減らせます（※ただし球形の物を選ぶ必要があります）
-![Drilling](/images/drilling.png)
+![底面に穴あけ](/images/drilling.png)
 1. ボタンを縫い付ける要領でリストバンドに縫い付けます [参考](https://kaden.watch.impress.co.jp/docs/column/lifestyle/1161391.html) 。ただし、糸足を作る必要はありません。
-![Sewing Reflector](/images/sewing.png)
+![縫い付け](/images/sewing.png)
 1. 3つ作れば完成です。お疲れさまでした!
-![Complete Reflector](/images/reflector.png)
+![完成](/images/reflector.png)
 
 ## セットアップ
 1. SteamVRをPCにインストールします
@@ -42,6 +43,7 @@
 ファイルコピー後、SteamVRが起動可能な状態(=Rift SもしくはQuestが接続された状態)でvmt_manager.exeを起動してください。起動後、「Install」タブ内のInstallボタンを押してドライバのインストールを行ってください。
 その後SteamVRを再起動して、SteamVRの通信をファイヤウォールの設定で許可してください ([VMT公式解説はこちら](https://github.com/gpsnmeajp/VirtualMotionTracker/blob/master/docs/howto.md))
 1. RealSenseの赤外線プロジェクタにメンディングテープを貼付します
+![プロジェクタ上にテープを張り付け](/images/tapedprojector.png)
 1. RealSenseを設置します。USB-CケーブルでPCと接続して、ユーザーが立つ位置の真正面に下半身が視界に入るよう配置してください。
 1. 反射マーカーを装着します。お腹にはバンドの中にベルトを通してあげると固定しやすいです。
 1. RealSenseの正面に立って、ReSeTraを起動します。右のBody points画像で、Waist, L Foot, R Footが各位置にそれぞれ対応していれば成功です。
@@ -53,15 +55,13 @@
 1. SteamVRを起動します
 1. ReSeTra側のStart VMTボタンを押して位置の送信を開始します。
 1. HMD側の原点も同じ位置で正面を向いてリセットしてください（Oボタン長押し）。ReSeTra側の初期位置はZero set後に固定されるので、その位置に合うようにHMD側でリセットを行います。
-* これで完了です。2回目以降の使用では、6.~13.の手順になります。一度解決すれば7.~9.もほぼ省略可能です。良いフルトラライフを！
+*これで完了です。2回目以降の使用では、6.~13.の手順になります。一度解決すれば7.~9.もほぼ省略可能です。良いフルトラライフを！
 
 ## トラブルシューティング・FAQ
-**ReSeTraが起動しません
-
+**ReSeTraが起動しません**
 →USB3で接続されている事を確認してください。[RealSense Viewer](https://github.com/IntelRealSense/librealsense/releases/download/v2.38.1/Intel.RealSense.Viewer.exe)を使えば、現在繋がっているRealSenseがUSB3かどうかを確認する事が出来ます。もしUSB2.xで接続されている場合は、ケーブルをつなぎ直す、USB-Cの向きを変える、ポートを変える、ケーブルそのものを変えて見るなどの対策を行い、USB3で接続される事を確認後、上記の6.の手順に戻ってください。
 
-**SteamVRがエラーを起こしてVMTプラグインが無効化されてしまいます
-
+**SteamVRがエラーを起こしてVMTプラグインが無効化されてしまいます**
 →SteamVRの起動前にReSeTra側からVMT向けデータの送信を始めると正しく起動しなくなります。ReSeTra起動直後はVMTへの送信を開始せず、上記手順の11.と12.の順番を守って再度試してみてください。
 
 ## 免責事項
