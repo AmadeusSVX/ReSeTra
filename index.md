@@ -1,4 +1,3 @@
-20201008ReSeTraマニュアル
 # ReSeTra 0.1
 
 * ReSeTraはRealSense D4xxシリーズで動作する光学、距離値複合式の高速な簡易モーションキャプチャシステムです。
