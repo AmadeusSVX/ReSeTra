@@ -11,7 +11,7 @@
 * Windows10 VR ready対応PC
 * [ReSeTra](https://dummy)
 * [VirtualMotionTracker](https://github.com/gpsnmeajp/VirtualMotionTracker) Segmentation Fault氏作 
-* [SteamVR]（https://store.steampowered.com/app/250820/SteamVR/） 
+* [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)
 * Oculus Rift SもしくはOculus Quest（Oculus LinkあるいはVirtual Desktopでの接続）
  * **WindowsMRでは現状可視光カットフィルタが別途必要（要検証）。HTC Vive、Valve Indexでは未検証**
 * Intel RealSense D415/D435/D435i/D455のいずれか (D455を推奨　[参考](https://store.intelrealsense.com/products.html?product_list_order=price))
