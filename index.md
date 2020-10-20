@@ -14,8 +14,8 @@
 * [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)
 * Oculus Rift SもしくはOculus Quest（Oculus LinkあるいはVirtual Desktopでの接続）
  * **WindowsMRでは現状可視光カットフィルタが別途必要（要検証）。HTC Vive、Valve Indexでは未検証**
-* Intel RealSense D415/D435/D435i/D455のいずれか (D455を推奨　[参考](https://store.intelrealsense.com/products.html?product_list_order=price))
-* RealSense接続用の長めのUSB-Cケーブル（USB3接続必須　3m程度を推奨　[参考　※未検証](https://www.amazon.co.jp/gp/product/B081N1W39Y/)）
+* Intel RealSense D415/D435/D435i/D455のいずれか (D455を推奨 [参考](https://store.intelrealsense.com/products.html?product_list_order=price))
+* RealSense接続用の長めのUSB-Cケーブル（USB3接続必須 3m程度を推奨 [参考 ※未検証](https://www.amazon.co.jp/gp/product/B081N1W39Y/)）
 * メンディングテープ ([参考](https://www.amazon.co.jp/dp/B0013N1VCO/))
 * 反射マーカー x3 (自作できます。次節参照)
 
@@ -24,7 +24,7 @@
 
 ![マーカーの材料](/images/markerkit.png)
 
-* ピンポン玉　（ガチャポンの球形空カプセルでも可） : [参考URL 1](https://www.amazon.co.jp/dp/B073WDYLJK/) [参考URL 2](https://www.amazon.co.jp/dp/B00MX2FNTG/)
+* ピンポン玉　（ガチャポンの球形空カプセルでも可） : [参考URL1](https://www.amazon.co.jp/dp/B073WDYLJK/) [参考URL2](https://www.amazon.co.jp/dp/B00MX2FNTG/)
 * 再帰性反射テープ　： [参考(※未検証注意)](https://www.amazon.co.jp/dp/B00762A3LG/)
 * リストバンド　：　伸縮性のあるゴムバンド
 * 穴あけ用のドリルもしくはキリ
