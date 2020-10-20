@@ -2,18 +2,18 @@
 
 * ReSeTraはRealSense D4xxシリーズで動作する光学、距離値複合式の高速な簡易モーションキャプチャシステムです。
 * VirtualMotionTrackerと組み合わせる事で、SteamVRに腰、左足、右足の3点のトラッカーを追加する事が可能です。
-* Oculus Rift SやPCと接続したQuestで、簡易的なフルボディトラッキングが実現できます。
+* Oculus Rift SやPCと接続したOculus Questで、簡易的なフルボディトラッキングが実現できます。
 
 ## 更新履歴
 * 0.1 初版公開
 
 ## 動作環境
-* Windows10　VR ready対応PC
+* Windows10 VR ready対応PC
 * [ReSeTraソフトウェア](https://dummy)
 * [VirtualMotionTracker](https://github.com/gpsnmeajp/VirtualMotionTracker) Segmentation Fault氏作 
 * [SteamVR]（https://store.steampowered.com/app/250820/SteamVR/） 
 * Oculus Rift SもしくはOculus Quest（Oculus LinkあるいはVirtual Desktopでの接続）
- * **WindowsMRでは現状可視光カットフィルタが別途必要。HTC Vive、Valve Indexでは未検証**
+ * **WindowsMRでは現状可視光カットフィルタが別途必要（要検証）。HTC Vive、Valve Indexでは未検証**
 * Intel RealSense D415/D435/D435i/D455のいずれか (D455を推奨　[参考](https://store.intelrealsense.com/products.html?product_list_order=price))
 * RealSense接続用の長めのUSB-Cケーブル（USB3接続必須　3m程度を推奨　[参考　※未検証](https://www.amazon.co.jp/gp/product/B081N1W39Y/)）
 * メンディングテープ ([参考](https://www.amazon.co.jp/dp/B0013N1VCO/))
