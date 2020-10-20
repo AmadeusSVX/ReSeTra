@@ -63,7 +63,7 @@
 
 ## トラブルシューティング・FAQ
 **ReSeTraが起動しない**<br>
-→USB3で接続されている事を確認してください。[RealSense Viewer](https://github.com/IntelRealSense/librealsense/releases/download/v2.38.1/Intel.RealSense.Viewer.exe)を使えば、現在繋がっているRealSenseがUSB3接続かどうかを確認できます。もしUSB2.xで接続されている場合は、RealSenseのファームウェアを最新に更新する、ケーブルをつなぎ直す、USB-Cの向きを変える、ポートを変える、ケーブルそのものを変えて見るなどの対策を行い、USB3での接続を確認後、上記の6.の手順に戻ってください。
+→USB3で接続されている事を確認してください。[RealSense Viewer](https://github.com/IntelRealSense/librealsense/releases/download/v2.38.1/Intel.RealSense.Viewer.exe)を使えば、現在繋がっているRealSenseがUSB3接続かどうかを確認できます。もしUSB2.xで接続されている場合は、RealSenseのファームウェアを最新に更新する、ケーブルをつなぎ直す、USB-Cコネクタの向きを変える、ポートを変える、ケーブルを変えて見るなどの対策を行い、USB3での接続を確認後に上記の6.の手順に戻ってください。
 
 **SteamVRがエラーを起こしてVMTプラグインが無効化されてしまう**<br>
 →SteamVRの起動前にReSeTra側からVMT向けデータの送信を始めると正しく起動しなくなります。ReSeTra起動直後はVMTへの送信を開始せず、上記手順の11.と12.の順序を守って再度試してみてください。
