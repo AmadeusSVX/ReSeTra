@@ -9,7 +9,7 @@
 
 ## 動作環境
 * Windows10 VR ready対応PC
-* [ReSeTraソフトウェア](https://dummy)
+* [ReSeTra](https://dummy)
 * [VirtualMotionTracker](https://github.com/gpsnmeajp/VirtualMotionTracker) Segmentation Fault氏作 
 * [SteamVR]（https://store.steampowered.com/app/250820/SteamVR/） 
 * Oculus Rift SもしくはOculus Quest（Oculus LinkあるいはVirtual Desktopでの接続）
