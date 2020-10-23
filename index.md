@@ -46,7 +46,7 @@
 1. VirtualMotionTracker(VMT)をインストールします。ファイルコピー後、SteamVRが起動可能な状態(=Rift SもしくはQuestが接続された状態)でvmt_manager.exeを起動してください。起動後、「Install」タブ内のInstallボタンを押してドライバのインストールを行ってください。その後SteamVRを再起動して、SteamVRの通信をファイヤウォールの設定で許可してください ([VMT公式解説はこちら](https://github.com/gpsnmeajp/VirtualMotionTracker/blob/master/docs/howto.md))<br>
 1. RealSenseの赤外線プロジェクタにメンディングテープを貼付します<br>
 ![プロジェクタ上にテープを張り付け](/images/tapedprojector.png)
-1. RealSenseを設置します。USB-CケーブルでPCと接続して、ユーザーが立つ位置の真正面に下半身が視界に入るよう配置してください。<br>
+1. RealSenseを設置します。USB-CケーブルでPCと接続して、ユーザーが立つ位置の真正面に下半身が視界に入るよう配置してください。また、鏡面反射する物、再帰反射する物、太陽光が差し込む窓などが背景に可能な限り入らないように、位置と向きを調整してください。<br>
 1. 反射マーカーを装着します。お腹にはバンドの中にベルトを通してあげると固定しやすいです。<br>
 ![身体にマーカー装着](/images/bodymarker.png)<br>
 1. RealSenseの正面に立って、ReSeTraを起動します。初回起動時はファイヤウォールの許可画面が出ると思いますが、許可してください。右のBody points画像で、Waist, L Foot, R Footが各位置にそれぞれ対応していれば成功です。<br>
