@@ -1,6 +1,6 @@
 # ReSeTra 0.1
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/78mC2V_Br00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![](https://img.youtube.com/vi/78mC2V_Br00&t=155s/0.jpg)](https://www.youtube.com/watch?v=78mC2V_Br00&t=155s)
 
 * ReSeTraはRealSense D4xxシリーズで動作する光学、距離値複合式の高速な簡易モーションキャプチャシステムです。
 * VirtualMotionTrackerと組み合わせる事で、SteamVRに腰、左足、右足の3点のトラッカーを追加する事が可能です。
