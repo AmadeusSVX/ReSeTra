@@ -1,5 +1,7 @@
 # ReSeTra 0.1
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/78mC2V_Br00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 * ReSeTraはRealSense D4xxシリーズで動作する光学、距離値複合式の高速な簡易モーションキャプチャシステムです。
 * VirtualMotionTrackerと組み合わせる事で、SteamVRに腰、左足、右足の3点のトラッカーを追加する事が可能です。
 * Oculus Rift SやPCと接続したOculus Questで、簡易的なフルボディトラッキングが実現できます。
@@ -15,7 +17,7 @@
 * Oculus Rift SもしくはOculus Quest（Oculus LinkあるいはVirtual Desktopでの接続）
  * **WindowsMRでは現状可視光カットフィルタが別途必要（要検証）。HTC Vive、Valve Indexでは未検証**
 * Intel RealSense D415/D435/D435i/D455のいずれか (D455を推奨 [参考](https://store.intelrealsense.com/products.html?product_list_order=price))
-* RealSense接続用の長めのUSB-Cケーブル（USB3接続必須 3m程度を推奨 [参考 ※未検証](https://www.amazon.co.jp/gp/product/B081N1W39Y/)）
+* RealSense接続用の長めのUSB-Cケーブル（**USB3接続必須** 3m程度を推奨 [参考 ※未検証](https://www.amazon.co.jp/gp/product/B081N1W39Y/)）
 * メンディングテープ ([参考](https://www.amazon.co.jp/dp/B0013N1VCO/))
 * 反射マーカー x3 (自作できます。次節参照)
 
@@ -72,6 +74,13 @@
 
 **プレイ時にWaist, L Foot, R Footの対応がおかしくなって戻らない**<br>
 →RealSenseの真正面に立って、Reset Indexボタンを押すことで対応付けのリセットが可能です。また、VRアプリケーションの体験中でボタンを押すのが困難な場合は、正面に立った状態で3つのうちのマーカーの2つを手や他の部位で隠して一度ロストさせてみてください。対応付けが自動的にリセットされます。
+
+## 現状の制約（将来的に解決、改善するかも/しないかも）
+* 取得できるトラッカーは腰、右足、左足の3点のみです
+* 現状では1カメラのみの構成のため、正面限定です。RealSesnseに対して横を向くと検出、追跡が破綻します。
+* 腰と足の位置関係が入れ替わった状態でトラッカーがロストすると対応関係が崩れます。この場合は上記のようにマーカーを隠して対応付けのリセットが必要になります。
+* 各トラッカー＝胴体や足先の傾きはまだ取得していません。
+* VRアプリケーションを起動するPCと同一PCで動作します。要望があればネットワーク対応にするかもしれません。
 
 ## 免責事項
 * 本アプリケーションに発生した不具合について、本アプリケーション開発者は一切の修正・改善の義務を負いません。
